@@ -47,8 +47,7 @@ app.post('/newMessage', async (req, res) => {
 
     if (messageText === 'Ольга') {
         try {
-            const response = await axios(JOKE_API)
-            responseText = response.data.joke
+            responseText = "Кирилл злоебучий пиздосрал"
         }  catch (e) {
             console.log(e)
             res.send(e)
